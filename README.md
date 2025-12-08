@@ -21,20 +21,20 @@ npm install --save-dev stylelint stylelint-order
 
 ## Usage
 
-Add the config to your `stylelint.config.js`:
-
-```js
-export default {
-	extends: ['stylelint-config-pepelsbey'],
-};
-```
-
-Or in `stylelint.config.js`:
+Add this to your `stylelint.config.js`:
 
 ```js
 import config from 'stylelint-config-pepelsbey';
 
 export default config;
+```
+
+Or this to your package.json:
+
+```json
+"stylelint": {
+	"extends": ["stylelint-config-pepelsbey"]
+}
 ```
 
 ## License
