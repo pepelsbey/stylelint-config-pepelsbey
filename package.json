@@ -24,12 +24,12 @@
 	"author": "Vadim Makeev",
 	"license": "MIT",
 	"peerDependencies": {
-		"stylelint": "^16.0.0",
-		"stylelint-order": "^7.0.0"
+		"stylelint": ">=16.18.0",
+		"stylelint-order": ">=7.0.0"
 	},
 	"devDependencies": {
-		"@mdn/browser-compat-data": "^5.7.4",
-		"stylelint": "^16.0.0",
-		"stylelint-order": "^7.0.0"
+		"@mdn/browser-compat-data": "^7.2.4",
+		"stylelint": "^17.0.0",
+		"stylelint-order": "^7.0.1"
 	}
 }
