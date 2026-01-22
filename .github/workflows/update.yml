@@ -1,0 +1,87 @@
+name: Update
+
+on:
+  schedule:
+    # Run every Monday at 9:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-properties:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for new properties
+        id: check
+        run: |
+          OUTPUT=$(node update.js)
+          echo "$OUTPUT"
+
+          # Check if there are missing properties
+          if echo "$OUTPUT" | grep -q "Found .* properties missing"; then
+            echo "has_missing=true" >> $GITHUB_OUTPUT
+            # Extract only the property names (lines starting with "- ")
+            {
+              echo 'missing_props<<EOF'
+              echo "$OUTPUT" | grep "^- " | sed 's/^- //'
+              echo 'EOF'
+            } >> $GITHUB_OUTPUT
+          else
+            echo "has_missing=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create issue if new properties found
+        if: steps.check.outputs.has_missing == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'New CSS properties detected';
+            const missingProps = `${{ steps.check.outputs.missing_props }}`.trim().split('\n').map(p => `- ${p}`).join('\n');
+            const body = `The weekly check found new CSS properties in [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data) that are not in the config:
+
+            ${missingProps}
+
+            **Action needed:** Review these properties and consider adding them to \`order.js\`.`;
+
+            // Check if an issue with this title already exists and is open
+            const { data: existingIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'missing'
+            });
+
+            const existingIssue = existingIssues.find(issue => issue.title === title);
+
+            if (existingIssue) {
+              // Update the existing issue description
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: body
+              });
+              console.log(`Updated existing issue #${existingIssue.number}`);
+            } else {
+              // Create a new issue
+              const { data: newIssue } = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['missing']
+              });
+              console.log(`Created new issue #${newIssue.number}`);
+            }
