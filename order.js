@@ -89,6 +89,8 @@ export const propertiesOrder = [
 	'column-rule-width',
 	'column-span',
 	'column-width',
+	'column-height',
+	'column-wrap',
 
 	'table-layout',
 	'caption-side',
@@ -194,6 +196,7 @@ export const propertiesOrder = [
 	'scroll-margin-block-end',
 
 	'scroll-marker-group',
+	'scroll-target-group',
 
 	'scroll-padding',
 	'scroll-padding-top',
@@ -305,6 +308,24 @@ export const propertiesOrder = [
 	'border-end-end-radius',
 	'border-end-start-radius',
 
+	'corner-shape',
+	'corner-top-shape',
+	'corner-right-shape',
+	'corner-bottom-shape',
+	'corner-left-shape',
+	'corner-top-left-shape',
+	'corner-top-right-shape',
+	'corner-bottom-right-shape',
+	'corner-bottom-left-shape',
+	'corner-inline-start-shape',
+	'corner-inline-end-shape',
+	'corner-block-start-shape',
+	'corner-block-end-shape',
+	'corner-start-start-shape',
+	'corner-start-end-shape',
+	'corner-end-start-shape',
+	'corner-end-end-shape',
+
 	'border-image',
 	'border-image-source',
 	'border-image-slice',
@@ -330,6 +351,7 @@ export const propertiesOrder = [
 	'paint-order',
 	'vector-effect',
 	'shape-rendering',
+	'buffered-rendering',
 
 	'background',
 	'background-color',
@@ -342,6 +364,8 @@ export const propertiesOrder = [
 	'background-origin',
 	'background-attachment',
 	'background-repeat',
+	'background-repeat-x',
+	'background-repeat-y',
 	'background-blend-mode',
 
 	'backface-visibility',
@@ -368,11 +392,14 @@ export const propertiesOrder = [
 	'print-color-adjust',
 
 	'caret-color',
+	'caret-animation',
+	'caret-shape',
 
 	'color',
 
 	'color-interpolation',
 	'color-interpolation-filters',
+	'color-rendering',
 
 	'mask',
 
@@ -426,6 +453,7 @@ export const propertiesOrder = [
 	'text-decoration-skip',
 	'text-decoration-style',
 	'text-decoration-thickness',
+	'text-decoration-inset',
 
 	'text-underline-offset',
 	'text-underline-position',
@@ -573,6 +601,7 @@ export const propertiesOrder = [
 	'view-timeline',
 	'view-transition-class',
 	'view-transition-name',
+	'view-transition-group',
 
 	'timeline-scope',
 
@@ -612,7 +641,13 @@ export const propertiesOrder = [
 	'user-modify',
 
 	'interactivity',
+
+	'interest-delay',
+	'interest-delay-start',
+	'interest-delay-end',
+
 	'reading-flow',
+	'reading-order',
 
 	'zoom',
 
