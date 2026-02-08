@@ -510,7 +510,6 @@ export const propertiesOrder = [
 	'line-height',
 	'line-break',
 	'line-clamp',
-	'line-height-step',
 
 	'font',
 	'font-weight',
