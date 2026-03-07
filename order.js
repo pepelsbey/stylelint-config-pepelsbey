@@ -584,6 +584,7 @@ export const propertiesOrder = [
 	'animation-range-end',
 	'animation-timeline',
 	'animation-timing-function',
+	'animation-trigger',
 
 	'interpolate-size',
 
@@ -603,6 +604,12 @@ export const propertiesOrder = [
 	'view-transition-group',
 
 	'timeline-scope',
+
+	'timeline-trigger',
+	'timeline-trigger-name',
+	'timeline-trigger-source',
+
+	'trigger-scope',
 
 	'x',
 	'y',
@@ -647,6 +654,8 @@ export const propertiesOrder = [
 
 	'reading-flow',
 	'reading-order',
+
+	'flow-tolerance',
 
 	'zoom',
 
