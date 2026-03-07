@@ -28,8 +28,8 @@
 		"stylelint-order": ">=7.0.0"
 	},
 	"devDependencies": {
-		"@mdn/browser-compat-data": "^7.2.4",
-		"stylelint": "^17.0.0",
+		"@mdn/browser-compat-data": "^7.3.6",
+		"stylelint": "^17.4.0",
 		"stylelint-order": "^7.0.1"
 	}
 }
