@@ -10,6 +10,10 @@ jobs:
   check-properties:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      issues: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,6 +27,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Update BCD to latest
+        run: npm update @mdn/browser-compat-data
+
+      - name: Commit updated BCD
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          git diff --staged --quiet || git commit -m "Update BCD"
+          git push
+
       - name: Check for new properties
         id: check
         run: |
@@ -30,7 +45,7 @@ jobs:
           echo "$OUTPUT"
 
           # Check if there are missing properties
-          if echo "$OUTPUT" | grep -q "Found .* properties missing"; then
+          if echo "$OUTPUT" | grep -q "Found .* properties missing from the config"; then
             echo "has_missing=true" >> $GITHUB_OUTPUT
             # Extract only the property names (lines starting with "- ")
             {
@@ -49,11 +64,13 @@ jobs:
           script: |
             const title = 'New CSS properties detected';
             const missingProps = `${{ steps.check.outputs.missing_props }}`.trim().split('\n').map(p => `- ${p}`).join('\n');
-            const body = `The weekly check found new CSS properties in [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data) that are not in the config:
-
-            ${missingProps}
-
-            **Action needed:** Review these properties and consider adding them to \`order.js\`.`;
+            const body = [
+              'The weekly check found new CSS properties in [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data) that are not in the config:',
+              '',
+              missingProps,
+              '',
+              '**Action needed:** Review these properties and consider adding them to `order.js`.'
+            ].join('\n');
 
             // Check if an issue with this title already exists and is open
             const { data: existingIssues } = await github.rest.issues.listForRepo({
