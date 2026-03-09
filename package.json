@@ -9,6 +9,7 @@
 		"order.js"
 	],
 	"scripts": {
+		"test": "editorconfig-checker",
 		"update": "node update.js"
 	},
 	"keywords": [
@@ -29,6 +30,7 @@
 	},
 	"devDependencies": {
 		"@mdn/browser-compat-data": "^7.3.6",
+		"editorconfig-checker": "^6.0.0",
 		"stylelint": "^17.4.0",
 		"stylelint-order": "^7.0.1"
 	}
