@@ -2,6 +2,19 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.2.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.1.0...v1.2.0) — March 18, 2026
+
+### Added properties
+
+- `border-shape`
+- `timeline-trigger-activation-range`
+- `timeline-trigger-activation-range-end`
+- `timeline-trigger-activation-range-start`
+- `timeline-trigger-active-range`
+- `timeline-trigger-active-range-end`
+- `timeline-trigger-active-range-start`
+- `view-transition-scope`
+
 ## [1.1.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.0.3...v1.1.0) — March 9, 2026
 
 ### Added properties
