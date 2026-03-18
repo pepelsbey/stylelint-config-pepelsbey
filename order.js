@@ -308,6 +308,8 @@ export const propertiesOrder = [
 	'border-end-end-radius',
 	'border-end-start-radius',
 
+	'border-shape',
+
 	'corner-shape',
 	'corner-top-shape',
 	'corner-right-shape',
@@ -602,12 +604,19 @@ export const propertiesOrder = [
 	'view-transition-class',
 	'view-transition-name',
 	'view-transition-group',
+	'view-transition-scope',
 
 	'timeline-scope',
 
 	'timeline-trigger',
 	'timeline-trigger-name',
 	'timeline-trigger-source',
+	'timeline-trigger-activation-range',
+	'timeline-trigger-activation-range-start',
+	'timeline-trigger-activation-range-end',
+	'timeline-trigger-active-range',
+	'timeline-trigger-active-range-start',
+	'timeline-trigger-active-range-end',
 
 	'trigger-scope',
 
