@@ -10,7 +10,7 @@
 	],
 	"scripts": {
 		"test": "editorconfig-checker",
-		"update": "node update.js"
+		"update": "npm update @mdn/browser-compat-data && node update.js"
 	},
 	"keywords": [
 		"stylelint",

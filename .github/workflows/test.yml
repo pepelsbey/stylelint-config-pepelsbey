@@ -26,3 +26,6 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Check properties
+        run: node update.js --check
