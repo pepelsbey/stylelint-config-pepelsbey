@@ -39,7 +39,7 @@ jobs:
 
       - name: Create or update issue
         if: steps.check.outputs.has_missing == 'true'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -85,7 +85,7 @@ jobs:
 
       - name: Close resolved issue
         if: steps.check.outputs.has_missing == 'false'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const title = 'New CSS properties detected';
