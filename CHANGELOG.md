@@ -2,6 +2,49 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.3.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.2.0...v1.3.0) — May 11, 2026
+
+### Added properties
+
+- `column-rule-break`
+- `column-rule-inset`
+- `column-rule-inset-cap`
+- `column-rule-inset-cap-end`
+- `column-rule-inset-cap-start`
+- `column-rule-inset-end`
+- `column-rule-inset-junction`
+- `column-rule-inset-junction-end`
+- `column-rule-inset-junction-start`
+- `column-rule-inset-start`
+- `column-rule-visibility-items`
+- `row-rule`
+- `row-rule-break`
+- `row-rule-color`
+- `row-rule-inset`
+- `row-rule-inset-cap`
+- `row-rule-inset-cap-end`
+- `row-rule-inset-cap-start`
+- `row-rule-inset-end`
+- `row-rule-inset-junction`
+- `row-rule-inset-junction-end`
+- `row-rule-inset-junction-start`
+- `row-rule-inset-start`
+- `row-rule-style`
+- `row-rule-visibility-items`
+- `row-rule-width`
+- `rule`
+- `rule-break`
+- `rule-color`
+- `rule-inset`
+- `rule-inset-cap`
+- `rule-inset-end`
+- `rule-inset-junction`
+- `rule-inset-start`
+- `rule-overlap`
+- `rule-style`
+- `rule-visibility-items`
+- `rule-width`
+
 ## [1.2.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.1.0...v1.2.0) — March 18, 2026
 
 ### Added properties
