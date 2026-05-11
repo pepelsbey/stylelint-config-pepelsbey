@@ -110,6 +110,14 @@ All notable user-facing changes: added/removed properties, changed order.
 - `text-decoration-inset`
 - `view-transition-group`
 
+## [1.0.2](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.0.1...v1.0.2) — January 17, 2026
+
+Dependency and peer dependency updates. Usage notes update.
+
+## [1.0.1](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.0.0...v1.0.1) — December 7, 2025
+
+Fix source URL.
+
 ## [1.0.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/releases/tag/v1.0.0) — December 7, 2025
 
 Initial release.
