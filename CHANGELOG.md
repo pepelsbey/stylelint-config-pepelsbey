@@ -2,6 +2,13 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.4.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.3.0...v1.4.0) — June 14, 2026
+
+### Added properties
+
+- `flex-line-count`
+- `text-fit`
+
 ## [1.3.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.2.0...v1.3.0) — May 11, 2026
 
 ### Added properties
