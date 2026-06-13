@@ -52,6 +52,7 @@ export const propertiesOrder = [
 	'flex-flow',
 	'flex-direction',
 	'flex-wrap',
+	'flex-line-count',
 
 	'box-flex',
 	'box-flex-group',
@@ -526,6 +527,7 @@ export const propertiesOrder = [
 	'text-orientation',
 	'text-rendering',
 	'text-size-adjust',
+	'text-fit',
 	'text-autospace',
 	'text-spacing-trim',
 
