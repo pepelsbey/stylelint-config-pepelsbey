@@ -182,6 +182,7 @@ export const propertiesOrder = [
 
 	'box-sizing',
 	'aspect-ratio',
+	'frame-sizing',
 
 	'width',
 	'min-width',
@@ -465,6 +466,8 @@ export const propertiesOrder = [
 	'mask-border-source',
 	'mask-border-width',
 
+	'link-parameters',
+
 	'direction',
 	'writing-mode',
 	'unicode-bidi',
@@ -556,6 +559,9 @@ export const propertiesOrder = [
 	'line-height',
 	'line-break',
 	'line-clamp',
+	'max-lines',
+	'block-ellipsis',
+	'continue',
 
 	'font',
 	'font-weight',
@@ -672,6 +678,7 @@ export const propertiesOrder = [
 	'rx',
 	'ry',
 	'd',
+	'path-length',
 
 	'math-depth',
 	'math-shift',
