@@ -2,6 +2,17 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.5.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.4.0...v1.5.0) — July 7, 2026
+
+### Added properties
+
+- `block-ellipsis`
+- `continue`
+- `frame-sizing`
+- `link-parameters`
+- `max-lines`
+- `path-length`
+
 ## [1.4.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.3.0...v1.4.0) — June 14, 2026
 
 ### Added properties
