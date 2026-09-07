@@ -2,6 +2,15 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.6.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.5.0...v1.6.0) — September 7, 2026
+
+### Added properties
+
+- `scroll-axis-lock`
+- `white-space-trim`
+- `window-drag`
+- `wrap-inside`
+
 ## [1.5.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.4.0...v1.5.0) — July 7, 2026
 
 ### Added properties
