@@ -225,6 +225,7 @@ export const propertiesOrder = [
 	'clip-rule',
 
 	'scroll-behavior',
+	'scroll-axis-lock',
 
 	'scroll-margin',
 	'scroll-margin-top',
@@ -519,6 +520,8 @@ export const propertiesOrder = [
 	'text-wrap-mode',
 	'text-wrap-style',
 
+	'wrap-inside',
+
 	'text-overflow',
 
 	'text-shadow',
@@ -542,6 +545,7 @@ export const propertiesOrder = [
 
 	'white-space',
 	'white-space-collapse',
+	'white-space-trim',
 
 	'word-spacing',
 	'word-break',
@@ -705,6 +709,7 @@ export const propertiesOrder = [
 	'touch-action',
 	'user-select',
 	'user-modify',
+	'window-drag',
 
 	'interactivity',
 
