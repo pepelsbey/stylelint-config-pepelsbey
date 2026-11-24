@@ -2,6 +2,29 @@
 
 All notable user-facing changes: added/removed properties, changed order.
 
+## [1.7.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.6.0...v1.7.0) — November 24, 2026
+
+### Added properties
+
+- `border-block-end-radius`
+- `border-block-start-radius`
+- `border-bottom-radius`
+- `border-inline-end-radius`
+- `border-inline-start-radius`
+- `border-left-radius`
+- `border-right-radius`
+- `border-top-radius`
+- `fit-tolerance`
+- `hyphenate-limit-lines`
+- `max-size`
+- `min-size`
+- `size`
+- `text-decoration-skip-spaces`
+
+### Removed properties
+
+- `flow-tolerance`
+
 ## [1.6.0](https://github.com/pepelsbey/stylelint-config-pepelsbey/compare/v1.5.0...v1.6.0) — September 7, 2026
 
 ### Added properties

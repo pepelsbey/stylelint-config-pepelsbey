@@ -184,6 +184,10 @@ export const propertiesOrder = [
 	'aspect-ratio',
 	'frame-sizing',
 
+	'size',
+	'min-size',
+	'max-size',
+
 	'width',
 	'min-width',
 	'max-width',
@@ -343,10 +347,20 @@ export const propertiesOrder = [
 
 	'border-radius',
 
+	'border-top-radius',
+	'border-right-radius',
+	'border-bottom-radius',
+	'border-left-radius',
+
 	'border-top-left-radius',
 	'border-top-right-radius',
 	'border-bottom-right-radius',
 	'border-bottom-left-radius',
+
+	'border-block-start-radius',
+	'border-block-end-radius',
+	'border-inline-start-radius',
+	'border-inline-end-radius',
 
 	'border-start-start-radius',
 	'border-start-end-radius',
@@ -500,6 +514,7 @@ export const propertiesOrder = [
 	'text-decoration-line',
 	'text-decoration-skip-ink',
 	'text-decoration-skip',
+	'text-decoration-skip-spaces',
 	'text-decoration-style',
 	'text-decoration-thickness',
 	'text-decoration-inset',
@@ -555,6 +570,7 @@ export const propertiesOrder = [
 	'hyphens',
 	'hyphenate-character',
 	'hyphenate-limit-chars',
+	'hyphenate-limit-lines',
 	'hanging-punctuation',
 	'orphans',
 	'widows',
@@ -720,7 +736,7 @@ export const propertiesOrder = [
 	'reading-flow',
 	'reading-order',
 
-	'flow-tolerance',
+	'fit-tolerance',
 
 	'zoom',
 
